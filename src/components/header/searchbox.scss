@@ -1,0 +1,23 @@
+.searchbox {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    cursor:default;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    top: 90px;
+    //left: 48%;
+    z-index: 100;
+    .search-items {
+      z-index: 100;
+      cursor: pointer;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      overflow: scroll;
+    }
+  
+  }

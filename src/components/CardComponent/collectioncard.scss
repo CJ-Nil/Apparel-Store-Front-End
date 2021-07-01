@@ -1,0 +1,58 @@
+.card-collection-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-right: 20px;
+  min-width: 230px !important;
+  height: 100% !important;
+  cursor: pointer;
+  .card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    .card-imagetag {
+      height: 100%;
+      width: 100%;
+    }
+  }
+ 
+  .custom-button{
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: 255px;
+    display: none;
+  }
+
+  &:hover{
+    .image{
+      opacity: 0.8;
+    }
+
+    .custom-button{
+      opacity: 0.85;
+      display: flex;
+    }
+  }
+
+  .collection-footer {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    .name {
+      color: black;
+      width: 90%;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      color: black;
+      width: 15%;
+    }
+  }
+}
